@@ -21,8 +21,8 @@ async function wordExists(word) {
 async function testWord() {
     let word = document.getElementById("word").value;
     if (await wordExists(word)) {
-        document.getElementById().innerHTML = "Word found";
+        document.getElementById("result").innerHTML = "Word found";
     } else {
-        document.getElementById().innerHTML = "Word found";
+        document.getElementById("result").innerHTML = "Word not found";
     }
 }
